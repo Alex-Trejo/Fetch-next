@@ -1,0 +1,235 @@
+/* styles/Home.module.css */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navLink {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .navLink:hover {
+    color: #f4b400;
+  }
+  
+  .searchInput {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    margin-right: 1rem;
+  }
+  
+  .headerButton {
+    background-color: #f4b400;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .headerButton:hover {
+    background-color: #c6a500;
+  }
+
+.container {
+    text-align: center;
+    background: linear-gradient(to bottom, #9f979d, #fff);
+    min-height: 100vh;
+  }
+  
+  .title {
+    margin-top: 2%;
+    font-size: 2rem;
+  }
+  
+  .pokedex {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 425px;
+  }
+  
+  .pokemonData {
+    margin: 20px auto;
+  }
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .card {
+    background: #f5f5f5;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px #7a7979;
+    margin-top: 20px;
+  }
+  
+  .image {
+    max-width: 100%;
+  }
+  
+  .form {
+    margin: 20px auto;
+    width: 50%;
+  }
+  
+  .inputSearch {
+    height: 50px;
+    width: 80%;
+    padding: 4%;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    gap: 10px; /* Espacio entre botones */
+    margin-bottom: 20px; /* Espacio debajo de los botones */
+    margin-top: 20px;
+  }
+  
+  .btnHeader {
+    background-color: var(--clr-gray);
+    padding: .5rem;
+    border-radius: 100vmax;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .25);
+    transition: .2s;
+  }
+  
+  .btnHeader:hover {
+    transform: scale(1.1);
+    background-color: #e0e0e0; /* Color de fondo al pasar el mouse */
+  }
+  
+  .btnHeaderFairy {
+    background-color: var(--type-fairy);
+    padding: .5rem;
+    border-radius: 100vmax;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .25);
+    transition: .2s;
+  }
+  
+  .btnHeaderFairy:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .25);
+  }
+  
+  .navList {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+  }
+  
+  .navItem {
+    list-style: none;
+  }
+  
+
+/* Estilos para la tarjeta de Pokémon */
+.pokemonCard {
+    border: 2px solid #ddd; /* Borde del contenedor */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 16px; /* Espacio interno */
+    margin: 16px; /* Espacio externo entre tarjetas */
+    background-color: #fff; /* Fondo blanco para las tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para un efecto de elevación */
+    display: flex; /* Flexbox para alinear imagen y detalles */
+    flex-direction: column; /* Columna para imagen arriba y detalles abajo */
+    align-items: center; /* Centrar contenido */
+  }
+  
+  /* Imagen del Pokémon dentro de la tarjeta */
+  .pokemonImage {
+    max-width: 120px;
+    max-height: 120px;
+    margin-bottom: 12px; /* Espacio debajo de la imagen */
+  }
+  
+  /* Detalles del Pokémon dentro de la tarjeta */
+  .pokemonDetails {
+    text-align: center; /* Centramos el texto */
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .pokemonDetails h3 {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+  
+  .pokemonDetails p {
+    margin: 4px 0;
+  }
+  
+  /* Estilo para el contenedor de datos del Pokémon */
+  .pokemonData {
+    border: 2px solid #ddd; /* Borde del contenedor de datos */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 16px; /* Espacio interno */
+    background-color: #f9f9f9; /* Fondo gris claro para los datos */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
+  
+  /* Grid para mostrar los Pokémon en una cuadrícula */
+  .grid {
+    display: flex;
+    flex-wrap: wrap; /* Ajusta los elementos en múltiples líneas */
+    gap: 16px; /* Espacio entre tarjetas en la cuadrícula */
+    justify-content: center; /* Centra las tarjetas en el contenedor */
+  }
+  
+  /* Estilo del spinner */
+  #spinner {
+    font-size: 16px;
+    color: #333;
+  }
+
+  .pokemonListTitle {
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 1.5rem; /* Tamaño de fuente */
+    font-weight: bold; /* Fuente en negrita */
+  }
+  
+  .pokemonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
